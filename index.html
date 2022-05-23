@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kintex</title>
+  <link rel="stylesheet" href="r_css/master.css" />
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/menu1.js" defer></script>
+  <script src="js/swiper-bundle.js"></script>
+  <script src="js/notice_list.js" defer></script>
+</head>
+<body>
+  <!--m_header_wrap s-->
+  <div id="m_header_wrap">
+    <input type="checkbox" id="toggle_menu" />
+    <header id="main_header_m">
+      <h1 class="logo"><a href="#">kintex</a></h1>
+      <label for="toggle_menu" class="toggle_btn">햄버거버튼</label>
+    </header>
+    <nav id="main_nav_m">
+      <ul>
+        <label for="toggle_menu" class="toggle_btn">햄버거버튼</label>
+        <div id="search_wrap">
+          <form action="">
+            <fieldset>
+              <legend>검색어를 입력하세요.</legend>
+              <input type="text" id="search_t" />
+              <input type="image" id="search_btn" src="images/search_icon_btn.png" />
+            </fieldset>
+          </form>
+        </div>
+        <div id="organizer"><a href="#">ORGANIZER</a></div>
+        <li>
+          <a href="#">행사안내</a>
+          <ul class="sub_nav">
+            <li><a href="#">전체 일정</a></li>
+            <li><a href="#">전시 일정</a></li>
+            <li><a href="#">회의 일정</a></li>
+            <li><a href="#">문화행사 일정</a></li>
+            <li><a href="#">기타행사 일정</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">시설안내</a>
+          <ul class="sub_nav">
+            <li><a href="#">전시홀</a></li>
+            <li><a href="#">회의실</a></li>
+            <li><a href="#">오피스</a></li>
+            <li><a href="#">부대시설</a></li>
+            <li><a href="#">등록업체</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">이용안내</a>
+          <ul class="sub_nav">
+            <li><a href="#">편의시설</a></li>
+            <li><a href="#">교통안내</a></li>
+            <li><a href="#">숙박안내</a></li>
+            <li><a href="#">관광안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">홍보센터</a>
+          <ul class="sub_nav">
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">홍보자료</a></li>
+            <li><a href="#">고객만족센터</a></li>
+            <li><a href="#">VR보기</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">KINTEX</a>
+          <ul class="sub_nav">
+            <li><a href="#">개요</a></li>
+            <li><a href="#">CEO 인사말</a></li>
+            <li><a href="#">ESG 경영</a></li>
+            <li><a href="#">경영공시</a></li>
+            <li><a href="#">조직도</a></li>
+            <li><a href="#">위치안내</a></li>
+          </ul>
+        </li>
+      </ul>
+      <label for="toggle_menu" class="btn_close"></label>
+    </nav>
+  </div>
+<!--m_header_wrap e-->
+<!--d_header_wrap s-->
+<div id="d_header_wrap">
+  <header id="main_header_d">
+    <div id="header_wrap">  
+        <h1 class="logo"><a href="#">kintex</a></h1>
+      <!--main_nav-->
+      <div id="main_nav_d">
+        <ul>
+          <li>
+            <h2><a href="#">행사안내</a></h2>
+            <div class="sub_nav">
+              <div class="inner">
+                <ul>
+                  <li><a href="#">전체 일정</a></li>
+                  <li><a href="#">전시 일정</a></li>
+                  <li><a href="#">회의 일정</a></li>
+                  <li><a href="#">문화행사 일정</a></li>
+                  <li><a href="#">기타행사 일정</a></li>
+                </ul>
+              </div><!--inner end-->
+            </div><!--sub_nav end-->
+          </li>
+          <li>
+            <h2><a href="#">시설안내</a></h2>
+            <div class="sub_nav">
+              <div class="inner">
+                <ul>
+                  <li><a href="#">전시홀</a></li>
+                  <li><a href="#">회의실</a></li>
+                  <li><a href="#">오피스</a></li>
+                  <li><a href="#">부대시설</a></li>
+                  <li><a href="#">등록업체</a></li>
+                </ul>
+              </div><!--inner end-->
+            </div><!--sub_nav end-->
+          </li>
+          <li>
+            <h2><a href="#">이용안내</a></h2>
+            <div class="sub_nav">
+              <div class="inner">
+                <ul>
+                  <li><a href="#">편의시설</a></li>
+                  <li><a href="#">교통안내</a></li>
+                  <li><a href="#">숙박안내</a></li>
+                  <li><a href="#">관광안내</a></li>
+                </ul>
+              </div><!--inner end-->
+            </div><!--sub_nav end-->
+          </li>
+          <li>
+            <h2><a href="#">홍보센터</a></h2>
+            <div class="sub_nav">
+              <div class="inner">
+                <ul>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">홍보자료</a></li>
+                  <li><a href="#">고객만족센터</a></li>
+                  <li><a href="#">VR보기</a></li>
+                </ul>
+              </div><!--inner end-->
+            </div><!--sub_nav end-->
+          </li>
+          <li>
+            <h2><a href="#">KINTEX</a></h2>
+            <div class="sub_nav">
+              <div class="inner">
+                <ul>
+                  <li><a href="#">개요</a></li>
+                  <li><a href="#">CEO 인사말</a></li>
+                  <li><a href="#">ESG 경영</a></li>
+                  <li><a href="#">경영공시</a></li>
+                  <li><a href="#">조직도</a></li>
+                  <li><a href="#">위치안내</a></li>
+                </ul>
+              </div><!--inner end-->
+            </div><!--sub_nav end-->
+          </li>
+        </ul>
+      </div>
+      <!--main_nav end-->
+      <!--<div id="translate">
+        <ul>
+          <li><a href="#">KOR</a></li>
+          <li><a href="#">ENG</a></li>
+          <li><a href="#">CHN</a></li>
+        </ul>
+      </div>-->
+      <!--search_wrap-->
+      <div id="search_wrap_d">
+        <form action="">
+          <fieldset>
+            <legend>통합검색</legend>
+            <input type="text" id="search_txt">
+            <input type="image" id="search_btn" src="images/icon_magnifier_white.png" alt="검색" />
+          </fieldset>
+        </form>
+      </div>
+      <!--search_wrap end-->
+    </div>
+  </header>
+
+  <!--<script defer>
+  $("#main_nav_d").mouseenter(function(){    
+    $("#main_nav_d .inner li a").css({color: "#3665C1"});
+    $("#main_header_d").css({backgroundColor:"#fff"});
+    $("#main_header_d").stop().animate({height: "500px"},500);
+  });
+  $("#main_nav_d").mouseleave(function(){
+    $("#main_nav_d .inner li a").css({color: "#fff"});
+    $("#main_header_d").css({backgroundColor:"none"});
+    $("#main_header_d").stop().animate({height: "105px"},500);
+  });
+  </script>-->
+
+</div>
+<div class="gnb_bg"></div>
+<!--d_header_wrap e-->
+  <!--visual_image-->
+  <div id="visual_image_m">    
+    <p>글로벌 마이스 혁신 플랫폼,<br />
+      KINTEX</p>
+  </div>
+  <div id="visual_image_d">
+    <div id="visual_image_wrap">
+      <h3>
+        글로벌 마이스 혁신플랫폼,<br /> KINTEX
+      </h3>
+      <p>
+        세계 수준의 전시회 및 컨벤션을 통해 국내외 기업들의 무역 마케팅의 중심 역할 수행<br />
+        대한민국 대표 전시컨벤션센터이자 아시아 전시산업의 대표적인 글로벌 전시주최자입니다.
+      </p>
+
+      <a href="#">
+        <p>ORGANIZER</p>
+      </a>
+    </div>
+  </div>
+
+  <!--visual_image end-->
+    <div id="wrap">
+    <section id="info_schedule">
+      <div class="sec_card_ttl">
+        <h2>일정안내</h2>
+        <p>다양한 전시회, 박람회, 페어들을 만나보세요!</p>
+      </div>
+      <!--card-->
+      <div id="card_wrap">
+        <!-- Swiper -->
+        <div class="swiper cardSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="card_image" src="images/kin_poster_card1.png" alt="전시회포스터" /> 
+                <div class="card_text_box">
+                  <h3>메가쇼 2021 시즌2</h3>
+                  <p>2021-11-18 ~ 2021-11-21</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="card_image" src="images/kin_poster_card2.png" alt="전시회포스터" />
+                <div class="card_text_box">
+                  <h3>2021 트래블쇼</h3>
+                  <p>2021-11-18 ~ 2021-11-21</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="card_image" src="images/kin_poster_card3.png" alt="전시회포스터" />
+                <div class="card_text_box">
+                  <h3>2021 케이펫페어(대한민국펫산업박람회)</h3>
+                  <p>2021-11-19 ~ 2021-11-21</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="card_image" src="images/kin_poster_card4.png" alt="전시회포스터" />
+                <div class="card_text_box">
+                  <h3>제 14회 국제환경장비 및 자원순환산업전</h3>
+                  <p>2021-11-24 ~ 2021-11-26</p>
+                </div>
+              </a> 
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="card_image" src="images/kin_poster_card5.png" alt="전시회포스터" />
+                <div class="card_text_box">
+                  <h3>2021 스마트상점 &middot; 리테일 엑스포</h3>
+                  <p>2021-11-25 ~ 2021-11-27</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".cardSwiper", {
+            slidesPerView: 5,
+            spaceBetween: 22,
+            slidesPerGroup:1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+      </div>
+      <a href="mb_sub_info_schedule">자세히 보기</a>
+
+
+    </section>
+    <!--section_card end-->
+    <section id="info_vr">
+      <div class="sec_card_ttl">
+        <h2>시설안내</h2>
+        <p>킨텍스를 자세히 보여드립니다!</p>
+      </div>
+      <div id="vr_nav">
+        <div id="vr_left">
+          <ul class="points_exhibition">
+            <li><img src="images/info_vr_map_expo_hall.png" alt="전시홀 사진"></li>
+            <li><img src="images/info_vr_map_convention.png" alt="회의실 사진"></li>
+            <li><img src="images/info_vr_map_food_area.png" alt="식음시설 사진"></li>
+            <li><img src="images/info_vr_map_support.png" alt="편의시설 포인트"></li>
+          </ul>
+          <ul class="point">
+            <li class="active"><a href="images/ponit_exhibition.png"></a></li>
+            <li><a href="images/ponit_conference.png"></a></li>
+            <li><a href="images/point_f&b.png"></a></li>
+            <li><a href="images/point_support.png"></a></li>
+          </ul>
+        </div>
+        <div id="vr_right">
+          <div class="swiper exhibition active">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/kin_exhibition/1.JPG" alt="1층몰 전경사진" /></div>
+              <div class="swiper-slide"><img src="images/kin_exhibition/2.JPG" alt="1층몰 전경사진" /></div>
+              <div class="swiper-slide"><img src="images/kin_exhibition/3.JPG" alt="1층몰 전경사진" /></div>
+              <div class="swiper-slide"><img src="images/kin_exhibition/4.JPG" alt="1층몰 전경사진" /></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".exhibition", {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+
+          <div class="swiper conference active">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/kin_conference/2.JPG" alt="1층몰 전경사진" /></div>
+              <div class="swiper-slide"><img src="images/kin_conference/5.JPG" alt="1층몰 전경사진" /></div>
+              <div class="swiper-slide"><img src="images/kin_conference/4.JPG" alt="1층몰 전경사진" /></div>
+              <div class="swiper-slide"><img src="images/kin_conference/7.JPG/" alt="1층몰 전경사진" /></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".conference", {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+
+          <div class="swiper f_b active">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/kin_f_b/1.JPG" alt="1층몰 전경사진" /></div>
+              <div class="swiper-slide"><img src="images/kin_f_b/2.JPG" alt="1층몰 전경사진" /></div>
+              <div class="swiper-slide"><img src="images/kin_f_b/3.JPG" alt="1층몰 전경사진" /></div>
+              <div class="swiper-slide"><img src="images/kin_f_b/4.JPG" alt="1층몰 전경사진" /></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".f_b", {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+
+          <div class="swiper support active">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/kin_support/1.jpg" alt="1층몰 전경사진" /></div>
+              <div class="swiper-slide"><img src="images/kin_support/2.jpg" alt="1층몰 전경사진" /></div>
+              <div class="swiper-slide"><img src="images/kin_support/3.jpg" alt="1층몰 전경사진" /></div>
+              <div class="swiper-slide"><img src="images/kin_support/4.jpg" alt="1층몰 전경사진" /></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".support", {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+
+        </div>
+        <div id="vr_text">
+          <ul>
+            <li class="active">
+              <h2>전시홀</h2>
+              <p>킨텍스는 실내 전시면적 총 108,000㎡으로 국내 최대 규모의 전시면적을 보유한 전시 컨벤션센터입니다.<br /> 대형 국제전시회는 물론, 중소형 전시회 및 다양한 문화행사의 성공적인 개최를 위한
+                최적화된 시설과 서비스를 제공합니다.</p>
+            </li>
+            <li>
+              <h2>회의실</h2>
+              <p>KINTEX 1,2전시장에 위치한 37개의 회의실은 다양한 규모로 분할 또는 통합이 가능하여 원하는 규모의 행사 개최가 가능합니다.<br /> 또한 용도별로 강의식, 극장식, 연회식, 리셉션 등 다양한 행사를 개최할 수 있습니다.</p>
+            </li>
+            <li>
+              <h2>식음시설</h2>
+              <p>KINTEX 1, 2전시장에는 한식, 양식, 일식, 중식 등 전문 레스토랑과 스낵, 디저트&카페를 보유하고 있어 다양한 메뉴를 이용하실 수 있으며,<br /> 동시 수용인원 400명 규모의 대형 푸드코트, 다수의 편의점 등을 보유하고 있습니다.</p>
+            </li>
+            <li>
+              <h2>편의시설</h2>
+              <p>KINTEX는 의무실, 수유실 등 방문객들이 더욱 안전하고 편리하게 전시장을 이용할 수 있도록 지원시설을 운영하고 있습니다.<br /> 또한, 고양시 지역 홍보관 등을 운영하며 다양한 볼거리를 제공하고 있습니다.</p>
+            </li>
+          </ul>
+          <a href="https://k-mice.visitkorea.or.kr/vr/sites/KIN.kto?lang=ko#">VR로 보러가기</a>
+        </div>
+        <script>
+          $(function(){
+            var pointIndex = 0;
+            $("#vr_left > .point > li").click(function(){
+              pointIndex=$(this).index();
+              $(".points_exhibition > li").removeClass("active");
+              $("#vr_right > div").removeClass("active");
+              $("#vr_text > ul > li").removeClass("active");
+
+              $(".points_exhibition > li").eq(pointIndex).addClass("active");
+              $("#vr_right > div").eq(pointIndex).addClass("active");
+              $("#vr_text > ul > li").eq(pointIndex).addClass("active");
+            });
+            $(".points_exhibition > li").click(function(){
+              $(".points_exhibition > li").removeClass("active");
+            });
+          });
+        </script>
+      </div>
+    </section>
+
+    <section id="info_use">
+      <div class="sec_card_ttl">
+        <h2>이용안내</h2>
+        <p>더욱 편리하게 이용하세요.</p>
+      </div>
+      <div class="info_use_wrap">
+        <ul>
+          <li>
+            <a class="info_bed" href="#">
+              <h3>숙박 안내</h3>
+              <img src="images/info_bed.png" alt="숙박안내아이콘" />
+              <p>편안한 휴식공간을 안내합니다.</p>
+            </a>
+          </li>
+          <li>
+            <a class="info_parking" href="#">
+              <h3>편의시설 안내</h3>
+              <img src="images/info_parking.png" alt="편의시설안내아이콘" />
+              <p>빠르고 편리한 길을 안내합니다.</p>
+            </a>
+          </li>
+          <li>
+            <a class="info_map" href="#">
+              <h3>오시는길</h3>
+              <img src="images/info_map.png" alt="오시는길" />
+              <p>실시간 주차상황을 확인할 수 있습니다.</p>
+            </a>
+          </li>
+          <li>
+            <a class="info_camera" href="#">
+              <h3>관광 안내</h3>
+              <img src="images/info_camera.png" alt="관광 안내" />
+              <p>다양한 관광명소를 확인할 수 있습니다.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <section id="notice_wrap">
+      <dl>
+        <dt>공지사항</dt>
+        <dd>
+          <ul id="notice_list">
+            <li>
+              <a href="#">"코로나19 사회적 거리두기 강화 추진" 내용 중 대규모 행사·집회의 인원 기준 강화 안내('21.12.16발표)</a>
+              <span>2021.12.16</span>
+            </li>
+            <li>
+              <a href="#">㈜킨텍스에서 사외이사(비상임이사)를 모십니다.</a>
+              <span>2021.10.29</span>
+            </li>
+            <li>
+              <a href="#">2022년도 KINTEX 지정등록업체 모집 공고</a>
+              <span>2021.09.29</span>
+            </li>
+            <li>
+              <a href="#">[킨텍스-주최자] 코로나19 대응 방역관리 매뉴얼 (최종업데이트 : '21년 11월 4일)</a>
+              <span>2021.11.04</span></li>
+            <li>
+              <a href="#">2021년 공공조달 상생협력 지원 참여기업 모집 공고</a>
+              <span>2021.10.08</span></li>
+            <li>
+              <a href="#">공공재정환수법 시행 안내</a>
+              <span>2021.09.06</span></li>
+          </ul>
+        </dd>
+      </dl>
+      <!--<a href="#" class="more">공지사항 더보기</a>-->
+    </section>
+  </div>
+
+      <!--footer-->
+  <footer id="main_footer">
+    <div id="footer_wrap">
+      <h1>kintex</h1>
+      <ul class="policy">
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이메일주소 무단수집거부</a></li>
+        <li><a href="#">공공 데이터 개방</a></li>
+      </ul>
+      <ul class="copy_menu">
+        <li>10390, 경기도 고양시 일산서구 킨텍스로 217-60</li>
+        <li>사업자등록번호: 128-81-78009</li>
+        <li>대표이사: 이화영</li>
+        <li>E-MAIL: kjna@kintex.com</li>
+        <li>TEL: 031-995-8114</li>
+      </ul>
+      <p class="copyright">
+        Copyright &copy; KINTEX All rights reserved
+      </p>
+    </div>
+  </footer>
+  <!--footer end-->
+</body>
+</html>

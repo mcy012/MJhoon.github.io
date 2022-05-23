@@ -1,0 +1,43 @@
+/*footer_style.css*/
+
+#main_footer{
+  width: 100%; height: 334px;
+  position:relative;
+  background-color: #3665C1;
+}
+  #footer_wrap{
+    width: 1200px; height: 311px;
+
+    margin: 0 auto;
+    padding-top: 23px;
+    color: #fff;
+    font-size: 12px;
+  }
+  #footer_wrap > h1{
+    width: 222px; height: 40px;
+    background: url(../img/kintex_foot_logo.png) no-repeat;
+    text-indent: -6000px; overflow: hidden;
+  }
+  #footer_wrap > .policy{
+    width: 328px; height: 17px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-bottom: 10px;
+  }
+  #footer_wrap > .policy > li > a{
+    color: #fff;
+  }
+
+  #footer_wrap > .copy_menu{
+    width:419px; height: 34px;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  #main_footer > .copyright{
+    position:absolute;
+    right: 360px; bottom: 10px;
+    color: #fff;
+    font-size: 12px;
+  }

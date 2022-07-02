@@ -53,7 +53,7 @@
 
 
   /*모바일*/
-  @media screen and ( min-width: 360px) and ( max-width: 541px){
+  @media screen and ( min-width: 360px) and ( max-width: 540px){
     /*header*/
     /*mobile_header_style.css*/
 #d_header_wrap{
@@ -113,8 +113,7 @@
       position: absolute;
       right: 0; top: 0;
       background-color: #fff;
-      
-    overflow:auto;
+      overflow:auto;
     }
       #main_nav_m > ul > li{        
         border-bottom: 1px solid rgba(54,101,193,0.3);
@@ -220,14 +219,14 @@
             background: url(../images/visual_image_character.png) no-repeat right 20% bottom/230px auto;
           }
           #visual_image_wrap > h3{
-            width:760px; height: 188px; 
+            width:320px; height: 188px; 
             font-size: 24px;
             color: #fff;
             font-weight: 700;
-            padding: 50px 0 50px 20px;
+            padding: 60px 0 50px 20px;
             background: url(../images/visual_main_text7.png), url(../images/visual_main_text8.png);
             background-repeat: no-repeat;
-            background-position: 5.5% 26% ,4% 38%;
+            background-position: 40% 29%, 12% 41%;
           }
           #visual_image_wrap > p{
             width: 589px; height: 47px;
@@ -838,14 +837,14 @@
             background: url(../images/visual_image_character.png) no-repeat right 20% bottom/230px auto;
           }
           #visual_image_wrap > h3{
-            width:760px; height: 188px; 
-            font-size: 40px;
+            width:501px; height: 188px; 
+            font-size: 36px;
             color: #fff;
             font-weight: 700;
-            padding: 50px 0 50px 20px;
+            padding: 90px 0 50px 20px;
             background: url(../images/visual_main_text5.png), url(../images/visual_main_text6.png);
             background-repeat: no-repeat;
-            background-position: 10% 32% ,5.5% 53%;
+            background-position: 42% 40%, 9% 56%;
           }
           #visual_image_wrap > p{
             width: 589px; height: 47px;

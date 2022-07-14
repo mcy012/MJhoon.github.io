@@ -672,12 +672,13 @@ a:hover{}
       flex-wrap: wrap;
     }
     #search_wrap{
-      width: 1000px;
+      width: 100%;
       margin: 45px 82px;
     }
 
       .search_wrap{
         display:flex;
+        justify-content: space-between;
       }
       .form_checkbox{display: flex;}
         .form_checkbox input[type=checkbox]{
@@ -721,7 +722,10 @@ a:hover{}
             font-weight: 700;
             font-size: 16px;
           }
-    .filter_bottom .search_wrap{}
+    .filter_bottom{
+      display:flex;
+      justify-content: space-between;
+    }
 
       .form_bottom_checkbox{
         width:132px; height: 50px;
@@ -735,6 +739,37 @@ a:hover{}
           justify-content: center;
           align-items: center;
         }
+    .sort_date{
+      width: 400px;
+    }
+      .date_input_wrap{
+        height: 110px;
+        display: flex;
+        justify-content: space-between;
+      }
+        .cell{
+          display: flex;
+          align-items: center;
+        }
+          .cell > input{
+            display: block;
+            margin: 0 auto;
+            height: 40px;
+            padding-left: 5px;
+            background-color: rgba(54,101,193,0.1);
+          }
+    .calendarDwd{
+      width: 150px;
+      height: 50px;
+      line-height: 50px;
+      margin: auto 0;
+      background-color: rgba(0,0,0,1);
+      color:#999;
+      font-weight: 700;
+      text-align: center;
+    }
+          
+    
 
     /*footer*/    
     /*footer_style.css*/

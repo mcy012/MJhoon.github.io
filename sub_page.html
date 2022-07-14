@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sub_page</title>
-  <link rel="stylesheet" href="r_css/sub_master.css" />
-  <script src="js/jquery-3.6.0.min.js"></script>
+  <title>sub_page</title>  
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/r_css/sub_master.css">
+  <script src="/js/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script src="js/menu1.js"></script>
 </head>
 <body>
@@ -271,7 +273,21 @@
               <span>6개월</span>
             </label>
           </div>
+          <div class="sort_date">
+            <div class="date_input_wrap">
+              <div class="cell">
+                <label for="datepickerStart" class="blind">행사시작일 입력</label>     
+                <input type="text" id="datepickerStart" placeholder="시작날짜">
+              </div>
+              <div class="cell">
+                <label for="datepickerEnd" class="blind">행사마감일 입력</label>     
+                <input type="text" id="datepickerEnd" placeholder="마감날짜">
+              </div>
+            </div>
+          </div>
+          <a class="calendarDwd">전체 일정 다운로드</a>
         </div>
+
       </div>
 
 
@@ -300,6 +316,25 @@
     </div>
   </footer>
   <!--footer end-->
+
+  <script>
+    $.datepicker.setDefaults({
+      dateFormat: 'yy-mm-dd',
+      prevText: '이전 달',
+      nextText: '다음 달',
+      monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+      monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+      dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+      dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+      dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+      showMonthAfterYear: true,
+      yearSuffix: '년'
+    });
+  
+    $(function() {
+      $("#datepickerStart, #datepickerEnd").datepicker();
+    });        
+  </script>
 </body>
 
 </html>

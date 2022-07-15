@@ -38,6 +38,9 @@ a{
   text-decoration: none;
   color: #222;
 }
+button{
+  cursor: pointer;
+}
 a:hover{}  
   /**** CLASS STYLE ********************/
   .skip, .blind{
@@ -53,404 +56,6 @@ a:hover{}
 
 
   /*모바일*/
-  @media screen and ( min-width: 360px) and ( max-width: 943px){
-    /*header*/
-    /*mobile_header_style.css*/
-#d_header_wrap{
-  display:none;
-}
-#main_header_m{
-  width: 100%;
-  height: 62px;
-  position: fixed;
-  background-color: #3665C1;
-  z-index: 100;
-}
-  #main_header_m > h1{}
-    #main_header_m > h1 > a{
-      width:100px; height: 40px;      
-      position:absolute;
-      left: 11px; top: 11px;
-      background: url(../images/kintex_header_logo_moblie.png);      
-      text-indent: -6000px; overflow: hidden;
-    }
-
-  #main_header_m > .toggle_btn{
-    width: 21px; height: 18px;    
-    position: absolute;
-    right:22px; top: 22px;
-    background: url(../images/menu_toolbar.png);
-    text-indent: -6000px; overflow: hidden;
-  }
-
-  #main_nav_m{
-    width: 100%;
-    position: fixed;
-    right: -100%; top: 0; bottom: 0;
-    transition-duration: 500ms;
-    z-index: 101;
-    background-color: rgba(0,0,0,0.0);
-    opacity: 0;
-  }
-    #toggle_menu:checked + #main_header_m + #main_nav_m{
-      right: 0;
-      opacity: 1;
-      transition-duration: 0.3s, 0.3s;
-      transition-property: right, background-color;
-      transition-delay: 0s, 0.3s;
-    }
-    
-    #main_nav_m .toggle_btn{
-      width: 21px; height: 18px;    
-      position: absolute;
-      right:22px; top: 22px;
-      background: url(../images/menu_toolbar_close2.png);
-      text-indent: -6000px; overflow: hidden;
-    }
-
-    #main_nav_m > ul{
-      width: 80%; height: 100%;
-      position: absolute;
-      right: 0; top: 0;
-      background-color: #fff;
-      
-    overflow:auto;
-    }
-      #main_nav_m > ul > li{        
-        border-bottom: 1px solid rgba(54,101,193,0.3);
-        margin: 0 5px;
-      }
-        #main_nav_m > ul > li > a{
-          height: 60px;
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 60px;
-          padding: 0 10px;
-          background: url(../images/sub_menu_close.png) no-repeat 95% 50%;
-        }
-        #main_nav_m > ul > li.active > a{
-          background: url(../images/sub_menu_close_up.png) no-repeat 95% 50%;
-        }
-        #main_nav_m > ul > li:nth-of-type(1) > a,
-        #main_nav_m > ul > li:nth-of-type(1) > .sub_nav > li:nth-of-type(1) > a{
-          text-decoration: underline;
-        }
-    /* 주최자 사이트 */
-    #organizer{width: 100%; height: 50px;}
-      #organizer > a{
-        margin: 5px 5px;
-        height: 40px;
-        background: rgba(54,101,193,1);
-        border-radius: 25px;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 36px;
-        color: #fff;
-      }
-    /* 검색툴 */
-    #search_wrap{
-      width: 100%;
-      margin-top: 62px;
-      position: relative;
-    }
-      #search_wrap > form{  
-      }
-        #search_wrap > form > fieldset{
-          height: 40px;
-          overflow: hidden;  
-          margin: 5px 5px 0 5px;
-          border-radius: 18px;          
-          background-color: rgba(54,101,193,0.3);
-        }
-          #search_wrap > form > fieldset > legend{}
-
-      #search_btn{
-        width: 20px; height: 20px;
-        position: absolute;
-        right: 15px; top: 10px;
-      }
-      #search_t{
-        width: 85%;
-        padding-left: 10px;
-        padding-top: 4px;
-      }
-
-    /*서브메뉴*/
-    #main_nav_m > ul > li > .sub_nav{}
-      #main_nav_m > ul > li > .sub_nav > li{
-        height: 0;
-        overflow: hidden;
-        transition-duration: 300ms;
-      }
-      #main_nav_m > ul > li.active > .sub_nav > li{  
-        background-color: rgba(54,101,193,0.1);
-        height: 40px;
-      }
-        #main_nav_m > ul > li > .sub_nav > li > a{
-          height: 40px;
-          line-height: 40px;
-          padding:0 10px 0;
-          font-weight: 700;
-          color: rgba(0,0,0,0.5);
-        }
-  
-        #main_nav_m > .btn_close {
-          position: absolute;
-          left:0; right: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -100;
-          background-color: rgba( 0,0,0,0.6);
-        }
-
-
-  /*footer*/
-
-/*footer_style.css*/
-
-#main_footer{
-  width: 100%; height: 200px;
-  background-color: #3665C1;
-  position: relative;
-}
-  #footer_wrap{
-    width: 100%;
-    color: #fff;
-    font-size: 12px;
-  }
-  #footer_wrap > h1{
-    width: 100%; height: 40px;
-    background: url(../images/kintex_foot_logo.png) no-repeat 50% 50%;
-    text-indent: -6000px; overflow: hidden;
-    padding-top: 10px;
-  }
-  #footer_wrap > .policy{
-    display:flex;
-    margin-top: 20px;
-  }
-    #footer_wrap > .policy > li{
-      
-      margin: 0 auto;
-      display: block;
-    }
-      #footer_wrap > .policy > li > a{
-        color: #fff;
-      }
-
-  #footer_wrap .copy_menu{
-    width:100%; height: 34px;
-    text-align: center;
-  }
-  #main_footer .copyright{
-    width: 100%;
-    color: #fff;
-    font-size: 12px;
-    text-align: center;
-    position: absolute;
-    left: 0; bottom: 3px;
-  }
-
-  }
-
-  @media screen and ( min-width: 944px) and (max-width: 1299px) {
-    /*header*/
-    /*mobile_header_style.css*/
-    #d_header_wrap{
-      display:none;
-    }
-    #main_header_m{
-      width: 100%;
-      height: 62px;
-      position: fixed;
-      background-color: #3665C1;
-      z-index: 100;
-    }
-      #main_header_m > h1{}
-        #main_header_m > h1 > a{
-          width:100px; height: 40px;      
-          position:absolute;
-          left: 11px; top: 11px;
-          background: url(../images/kintex_header_logo_moblie.png);      
-          text-indent: -6000px; overflow: hidden;
-        }
-    
-      #main_header_m > .toggle_btn{
-        width: 21px; height: 18px;    
-        position: absolute;
-        right:22px; top: 22px;
-        background: url(../images/menu_toolbar.png);
-        text-indent: -6000px; overflow: hidden;
-      }
-    
-      #main_nav_m{
-        width: 100%;
-        position: fixed;
-        right: -100%; top: 0; bottom: 0;
-        transition-duration: 500ms;
-        z-index: 101;
-        background-color: rgba(0,0,0,0.0);
-        opacity: 0;
-      }
-        #toggle_menu:checked + #main_header_m + #main_nav_m{
-          right: 0;
-          opacity: 1;
-          transition-duration: 0.3s, 0.3s;
-          transition-property: right, background-color;
-          transition-delay: 0s, 0.3s;
-        }
-        
-        #main_nav_m .toggle_btn{
-          width: 21px; height: 18px;    
-          position: absolute;
-          right:22px; top: 22px;
-          background: url(../images/menu_toolbar_close2.png);
-          text-indent: -6000px; overflow: hidden;
-        }
-    
-        #main_nav_m > ul{
-          width: 80%; height: 100%;
-          position: absolute;
-          right: 0; top: 0;
-          background-color: #fff;
-          
-        overflow:auto;
-        }
-          #main_nav_m > ul > li{        
-            border-bottom: 1px solid rgba(54,101,193,0.3);
-            margin: 0 5px;
-          }
-            #main_nav_m > ul > li > a{
-              height: 60px;
-              font-size: 16px;
-              font-weight: 700;
-              line-height: 60px;
-              padding: 0 10px;
-              background: url(../images/sub_menu_close.png) no-repeat 95% 50%;
-            }
-            #main_nav_m > ul > li.active > a{
-              background: url(../images/sub_menu_close_up.png) no-repeat 95% 50%;
-            }
-            #main_nav_m > ul > li:nth-of-type(1) > a,
-            #main_nav_m > ul > li:nth-of-type(1) > .sub_nav > li:nth-of-type(1) > a{
-              text-decoration: underline;
-            }
-        /* 주최자 사이트 */
-        #organizer{width: 100%; height: 50px;}
-          #organizer > a{
-            margin: 5px 5px;
-            height: 40px;
-            background: rgba(54,101,193,1);
-            border-radius: 25px;
-            text-align: center;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 36px;
-            color: #fff;
-          }
-        /* 검색툴 */
-        #search_wrap{
-          width: 100%;
-          margin-top: 62px;
-          position: relative;
-        }
-          #search_wrap > form{  
-          }
-            #search_wrap > form > fieldset{
-              height: 40px;
-              overflow: hidden;  
-              margin: 5px 5px 0 5px;
-              border-radius: 18px;          
-              background-color: rgba(54,101,193,0.3);
-            }
-              #search_wrap > form > fieldset > legend{}
-    
-          #search_btn{
-            width: 20px; height: 20px;
-            position: absolute;
-            right: 15px; top: 10px;
-          }
-          #search_t{
-            width: 85%;
-            padding-left: 10px;
-            padding-top: 4px;
-          }
-    
-        /*서브메뉴*/
-        #main_nav_m > ul > li > .sub_nav{}
-          #main_nav_m > ul > li > .sub_nav > li{
-            height: 0;
-            overflow: hidden;
-            transition-duration: 300ms;
-          }
-          #main_nav_m > ul > li.active > .sub_nav > li{  
-            background-color: rgba(54,101,193,0.1);
-            height: 40px;
-          }
-            #main_nav_m > ul > li > .sub_nav > li > a{
-              height: 40px;
-              line-height: 40px;
-              padding:0 10px 0;
-              font-weight: 700;
-              color: rgba(0,0,0,0.5);
-            }
-      
-            #main_nav_m > .btn_close {
-              position: absolute;
-              left:0; right: 0;
-              width: 100%;
-              height: 100%;
-              z-index: -100;
-              background-color: rgba( 0,0,0,0.6);
-            }
-    
-      /*footer*/
-    
-    /*footer_style.css*/
-    
-    #main_footer{
-      width: 100%; height: 200px;
-      background-color: #3665C1;
-      position: relative;
-    }
-      #footer_wrap{
-        width: 100%;
-        color: #fff;
-        font-size: 12px;
-      }
-      #footer_wrap > h1{
-        width: 100%; height: 40px;
-        background: url(../images/kintex_foot_logo.png) no-repeat 50% 50%;
-        text-indent: -6000px; overflow: hidden;
-        padding-top: 10px;
-      }
-      #footer_wrap > .policy{
-        display:flex;
-        margin-top: 20px;
-      }
-        #footer_wrap > .policy > li{
-          
-          margin: 0 auto;
-          display: block;
-        }
-          #footer_wrap > .policy > li > a{
-            color: #fff;
-          }
-    
-      #footer_wrap .copy_menu{
-        width:100%; height: 34px;
-        text-align: center;
-      }
-      #main_footer .copyright{
-        width: 100%;
-        color: #fff;
-        font-size: 12px;
-        text-align: center;
-        position: absolute;
-        left: 0; bottom: 3px;
-      }
-    
-  }
 
   /*데스크탑*/
   @media screen and ( min-width: 1300px) {   
@@ -644,7 +249,6 @@ a:hover{}
       display: flex;
       justify-content: space-between;
       cursor:pointer;
-      
     }
       .list_btn button{
         width:300px; height: 50px;
@@ -679,18 +283,16 @@ a:hover{}
       .search_wrap{
         display:flex;
         justify-content: space-between;
+        align-items: center;
       }
       .form_checkbox{display: flex;}
         .form_checkbox input[type=checkbox]{
           display: block;
-          position:relative;
-          top: 9px; left: 4px;
           /* Double-sized Checkboxes */
           -ms-transform: scale(1.5); /* IE */
           -moz-transform: scale(1.5); /* FF */
           -webkit-transform: scale(1.5); /* Safari and Chrome */
           -o-transform: scale(1.5); /* Opera */
-          padding: 5px;
         }
         .form_checkbox span{
           font-weight: 700;
@@ -701,7 +303,6 @@ a:hover{}
         .input_search{
           margin: 0 50px;
           overflow:hidden;
-          border-bottom:2px solid #707070;
         }
 
           .input_search label{
@@ -713,12 +314,22 @@ a:hover{}
             width: 22px; height: 22px;
             display: block;
             position: absolute;
-            background: url(../images/sub_search_icon.png) no-repeat;
+          
           }
           .input_search input{
-            height: 30px;
+
+            height: 40px;
             padding-left: 72px;
             padding-right: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            border-bottom:2px solid #707070;
+            background: url(../images/sub_search_icon.png) no-repeat 8px center;center;
+          }
+          .btn_search_black{
+            width: 150px; height: 40px;
+            background-color: #000;
+            color:#fff;
             font-weight: 700;
             font-size: 16px;
           }
@@ -731,7 +342,11 @@ a:hover{}
         width:132px; height: 50px;
         box-sizing: border-box;
         border: 2px solid rgba(54,101,193,0.5);
-        margin: 30px 14px 30px 0;
+        margin: 30px 8px 30px 0;
+      }
+      .form_bottom_checkbox:hover{
+        background-color: rgba(54,101,193,0.5);
+        color: #fff;
       }
         .form_bottom_checkbox span{
           display: inline-flex;
@@ -740,35 +355,83 @@ a:hover{}
           align-items: center;
         }
     .sort_date{
-      width: 400px;
+      width: 340px;
     }
       .date_input_wrap{
         height: 110px;
         display: flex;
         justify-content: space-between;
       }
+      .date_input_wrap .cell:nth-child(2):before{
+        content: "~";
+        width: 30px; height: 30px;
+        text-align: center;
+        line-height: 30px;
+
+      }
         .cell{
           display: flex;
           align-items: center;
         }
           .cell > input{
+            width:150px;
             display: block;
             margin: 0 auto;
             height: 40px;
             padding-left: 5px;
             background-color: rgba(54,101,193,0.1);
           }
+        
     .calendarDwd{
-      width: 150px;
-      height: 50px;
-      line-height: 50px;
+      width: 190px;
+      height: 48px;
+      line-height: 44px;
       margin: auto 0;
-      background-color: rgba(0,0,0,1);
-      color:#999;
+      border: solid 2px #3665C1 ;
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding-left: 28px;
+      color:rgba(54,101,193,0.5);
       font-weight: 700;
       text-align: center;
+      background:url(../images/download_icon.png) no-repeat 12px 50%;
     }
-          
+
+  #card_container{
+    width: 100%; height: 100%;
+    
+    display: block;
+  }
+    .card_wrap{
+      width: 1200px;
+      margin: 0 auto 300px;
+      display:flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+      .card_box{ 
+        width: 30%;
+        margin-top: 60px;
+        background-color: #fff;
+      }
+        .card_image_box{
+          width: 100%; height: 440px;
+        }
+        .card_text_box{  
+          font-size: 20px;        
+          height: 160px;
+        }
+          .card_text_box h3{
+            height: 80px;
+            font-size: 24px;
+            margin-top: 32px;
+            font-weight: 700;
+          }
+          .card_text_box p:nth-child(2){
+            margin-top:20px;
+          }
+
     
 
     /*footer*/    

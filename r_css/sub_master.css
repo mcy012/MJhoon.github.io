@@ -431,6 +431,18 @@ a:hover{}
           .card_text_box p:nth-child(2){
             margin-top:20px;
           }
+    
+      #paging{
+        width: 200px;        
+        margin: 0 auto;
+      }
+      #paging_number_wrap{
+        width: 100%;
+      }
+      #paging_number_wrap button{
+        font-weight: 700;
+        font-size: 24px;
+      }
 
     
 

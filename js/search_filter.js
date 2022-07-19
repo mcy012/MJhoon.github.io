@@ -1,19 +1,32 @@
-$(document).ready(function(){
+
+window.onload = function(){
     
-    var count = $(".card_box").length;
-    pagingHide = funtion(){
-        if(count > 9){
-        $(".card_box:gt(8)").hide();
+    button = document.querySelector('.btn_search_black');
+    input = document.getElementById('search');
+
+    // 클릭,엔터키 이벤트 
+    input.addEventListener('keydown',function(e){
+        if(e.key === "Enter"){
+        Filter();
+        }
+    });
+
+    button.addEventListener('click',Filter);
+
+    function Filter(){
+        var value , item , name
+        
+        value = document.getElementById('search').value.toUpperCase();
+        item = document.getElementsByClassName('card_box')
+        
+    //indexOf()를 활용한 검색기능 구현
+        for(i=0;i<item.length;i++){
+        name = item[i].getElementsByClassName("name");
+            if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+            item[i].style.display = "inline-block";
+            }else{
+            item[i].style.display = "none";
+            }
         }
     }
-    
-    
-    $("#search").keyup(function(){
-        var k = $(this).val();
-       // console.log(k); input 데이터 잘 받아오는지 확인
-            $("#card_container > .card_wrap > .card_box").hide();
-            var name = $(".card_text_box:nth-child(n+1):contains('" + k + "')");
-            $(name).parent().show();
-        // console.log(count); 확인로그
-    })
-})
+}
